@@ -1,0 +1,25 @@
+pip install youtube_dl
+pip install FFmpeg
+
+youtube-dl --no-part --restrict-filenames --user-agent "esplayer"  "https://mdstrm.com/live-stream-playlist/574463697b9817cf0886fc17.m3u8"
+
+ffmpeg "https://mdstrm.com/live-stream-playlist/574463697b9817cf0886fc17.m3u8"
+
+ffmpeg -i "https://mdstrm.com/live-stream-playlist/574463697b9817cf0886fc17.m3u8" -codec copy file.mkv
+
+youtube-dl -g https://www.caracoltv.com/senal-vivo
+
+youtube-dl -g https://mdstrm.com/live-stream/574463697b9817cf0886fc17?enablejsapi=1
+
+youtube-dl -g https://mdstrm.com/live-stream/574463697b9817cf0886fc17.m3u8
+
+youtube-dl -g https://us-b4-p-e-cz3.cdn.mdstrm.com/live-stream/574463697b9817cf0886fc17/publish/media_2400.m3u8?aid=574462d1cab0f4d50866f001&uid=y8t5vN4fqaCashc8N0CLEDMvuN4rqgJa&sid=FwrVSgCIU5ex3yT1v9vvlLia3sCvUit9&pid=IAddUiQtMdW2VEcwqE92KMdbsqhNtHRp&ref=https%3A%2F%2Fwww.caracoltv.com%2F&without_cookies=false&dnt=true&es=us-b4-p-e-cz3.cdn.mdstrm.com&ote=1619658755511&ot=kgW1AHPRJTN8x2pFvpR6LA&proto=https&pz=us
+
+youtube-dl --no-part --restrict-filenames --user-agent "esplayer" https://mdstrm.com/live-stream/574463697b9817cf0886fc17.m3u8
+
+youtube-dl --no-part --restrict-filenames --user-agent "esplayer" python ffmpeg_stream_mp4.py https://edge261.stream.highwebmedia.com/live-hls/amlst:naughtykathie-sd-1ae0b51703ba433232cc7049128f24209297ced9d6534925d05ab6cc4edad5ed_trns_h264/chunklist_w1833647524_b1148000_t64RlBTOjMwLjA=.m3u8
+
+
+
+
+ffmpeg -i "https://mdstrm.com/video/60871928c70c820830e973e6.m3u8" -c copy -bsf:a aac_adtstoasc "filenamevideo.mp4"
